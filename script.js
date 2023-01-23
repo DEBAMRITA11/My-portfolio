@@ -23,3 +23,12 @@ submitButton.addEventListener("click", function () {
 
 });
 
+// preloder-area
+window.onload = function () {
+    const preloderArea = document.getElementById("preloder-area");
+    preloderArea.className = "page-loaded";
+
+    setTimeout(function() {
+    preloderArea.style.display = "none";
+    }, 500);     
+}
