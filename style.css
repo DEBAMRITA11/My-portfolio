@@ -31,7 +31,7 @@ body {
     margin-right: 0;
 }
 .header-area .navbar-nav .nav-item:last-child a {
-    border: 1px solid #FFCC00;
+    border: 1px solid #FF9900;
     padding: 10px 20px;
     border-radius: 5px; 
 }
@@ -51,15 +51,11 @@ body {
     line-height: 32px;
 }
 .hero-text h2 { 
-    font-family: 'Epilogue';
-    font-style: normal;
-    font-weight: 800;
     font-size: 60px;
     line-height: 80px;
     color: #FFFFFF;
 }
 .hero-text h4 { 
-    font-size: 16px;
     color: #FF9900;
     font-size: 26px;
     line-height: 32px;
@@ -80,4 +76,158 @@ body {
     color: #003366;
     text-decoration: none; 
     border-radius: 6px;
+}
+.hero-img img{
+    width: 500px;
+    align-self:center;
+}
+
+@media (max-width: 991px) {
+    .hero-content {
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+    .hero-text {
+            text-align: left;
+            margin-bottom: 20px;
+    }
+    .hero-text h2 {
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    .hero-text h3{
+            font-size: 45px;
+            background-color:inherit;
+    }
+    .hero-text p {
+        font-size: 25px;
+    }
+    .hero-img img {
+            width: 100%;
+            order: -1;
+            margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .hero-content {
+        flex-direction: column-reverse;
+        align-content: center;
+        padding: 0 20px;
+        
+        }
+        .hero-text {
+            text-align: center;
+        
+        }
+        .hero-text h3{
+            font-size: 30px;
+            background-color: inherit;
+    }
+        .hero-img img {
+            width: 100%;
+            order: -1;
+            margin-bottom: 10px;
+        }
+}
+
+/* service-area */
+
+.service-area {
+    padding: 60px 0;
+    margin: 20px;
+    background-color: #FFFFFF;
+}
+.service-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+.section-heading {
+    text-align: center;
+}
+.section-heading h3 {
+font-weight: 800;
+font-size: 50px;
+line-height: 64px;
+color: #391400;
+}
+.section-heading h2 {
+font-weight: 400;
+font-size: 26px;
+line-height: 32px;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #EF6D58;
+}
+.single-service {
+    background-color: #003366;
+    padding: 20px;
+}
+.single-service i {
+    height: 30px;
+    width: 100px;
+    color:#EF6D58;
+}
+.single-service h3 {
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 5px;
+    color: white; 
+}
+.single-service p {
+    align-items: center;
+    font-size: 16px;
+    color: #FF9900;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 991px) {
+
+    .service-area .section-heading {
+       padding: 25px 0; 
+} 
+    .service-content {
+        grid-template-columns: repeat(1, 1fr);
+
+}
+.single-service {
+    text-align: center;
+}
+.single-service h3 {
+        text-align: center;
+}
+.single-service i {
+    text-align: center;
+}
+.single-service p {
+    text-align: center;
+}
+}
+
+@media (max-width: 575px) {
+    .service-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .single-service {
+        text-align: center;
+    }
+}
+
+/* Contact-area */
+
+
+
+
+
+
+
+
+/*Footer-area*/
+.footer-area {
+    text-align: center;
+    margin-bottom: 25px;
 }
